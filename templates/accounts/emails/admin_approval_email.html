@@ -1,0 +1,41 @@
+{% autoescape off %}
+
+{% if is_approved %}
+    
+    Congratulations!!! Your Account / Restarurant has been approved.
+
+    Dear {{user.first_name}},
+
+    We are thrilled to welcome you to foodOnline! Your account registration has been successfully approved, and you are now part of our growing community of exceptional restaurants.
+
+    At foodOnline, we are dedicated to helping you reach more customers and grow your business. With your new account, you can start showcasing your delicious menu, managing orders, and taking advantage of our marketing tools.
+
+    To get started, please log in to your account using the credentials you provided during registration. If you have any questions or need assistance, our support team is here to help you every step of the way.
+
+    Thank you for choosing foodOnline. We look forward to a successful partnership with you!
+
+    Best regards,
+
+    foodOnline
+
+{% else %}
+
+    We're Sorry, Your Account / Restarurant was not approved this time
+
+    Dear {{user.first_name}},
+
+    Thank you for your interest in joining foodOnline. We appreciate the time and effort you put into your application.
+
+    After careful review, we regret to inform you that your account has not been approved at this time. This decision was made based on our current selection criteria and platform requirements.
+
+    We encourage you to review your application and consider reapplying in the future. Should you have any questions or need further clarification regarding this decision, please feel free to reach out to our support team.
+
+    We value your interest in [foodOnline and hope to have the opportunity to work with you in the future.
+
+    Best regards,
+
+    foodOnline
+
+{% endif %}
+
+{% endautoescape%}
